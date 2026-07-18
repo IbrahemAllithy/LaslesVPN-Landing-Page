@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="LaslesVPN is a private virtual network that has unique features and has high security.">
+    <title>LaslesVPN - Secure and Fast</title>
+    
+    <!-- Preconnect to Google Fonts for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Rubik Font (400 for regular, 500 for medium, 700 for bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to our custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+      Navbar Section 
+      Semantic <header> tag. We use a checkbox hack for the mobile menu to avoid JavaScript.
+    -->
+    <header class="header">
+        <div class="container navbar">
+            <!-- Logo -->
+            <a href="#" class="logo" aria-label="LaslesVPN Home">
+                <img src="assets/Logo.svg" alt="LaslesVPN Logo" width="149" height="37">
+            </a>
+
+            <!-- Mobile Menu Checkbox Hack (No JS) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#help">Help</a></li>
+                </ul>
+            </nav>
+
+            <!-- Auth Buttons -->
+            <div class="auth-buttons">
+                <a href="#" class="btn-text">Sign In</a>
+                <a href="#" class="btn-outline">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container" id="about" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">Want anything to be easy with <strong>LaslesVPN.</strong></h1>
+                <p class="hero-description">
+                    Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
+                </p>
+                <!-- CTA Button -->
+                <a href="#pricing" class="btn-primary shadow-red">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <!-- Using width and height prevents Cumulative Layout Shift (CLS) -->
+                <img src="assets/Illustration 1.svg" alt="Person working on laptop using LaslesVPN" width="612" height="383" loading="eager">
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" aria-label="Platform Statistics">
+            <div class="container">
+                <div class="stats-card shadow-gray">
+                    <!-- Stat 1: Users -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <div class="stat-info">
+                            <strong>90+</strong>
+                            <span>Users</span>
+                        </div>
+                    </div>
+                    <!-- Decorative Divider -->
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    
+                    <!-- Stat 2: Locations -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="stat-info">
+                            <strong>30+</strong>
+                            <span>Locations</span>
+                        </div>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    
+                    <!-- Stat 3: Servers -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F53838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <div class="stat-info">
+                            <strong>50+</strong>
+                            <span>Servers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features container" id="features" aria-labelledby="features-title">
+            <div class="features-image">
+                <img src="assets/Illustration 2.png" alt="Happy person using computer" loading="lazy">
+            </div>
+            <div class="features-content">
+                <h2 id="features-title" class="section-title">We Provide Many Features You Can Use</h2>
+                <p class="section-description">
+                    You can explore the features that we provide with fun and have their own functions each feature.
+                </p>
+                <ul class="features-list">
+                    <li>
+                        <span class="check-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#2FAB73"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        </span>
+                        Powerful online protection.
+                    </li>
+                    <li>
+                        <span class="check-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#2FAB73"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        </span>
+                        Internet without borders.
+                    </li>
+                    <li>
+                        <span class="check-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#2FAB73"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        </span>
+                        Supercharged VPN.
+                    </li>
+                    <li>
+                        <span class="check-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#2FAB73"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        </span>
+                        No specific time limits.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing bg-light" id="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 id="pricing-title" class="section-title">Choose Your Plan</h2>
+                    <p class="section-description">
+                        Let's choose the package that is best for you and explore it happily and cheerfully.
+                    </p>
+                </div>
+                
+                <div class="pricing-cards">
+                    <!-- Free Plan -->
+                    <div class="card pricing-card">
+                        <div class="card-image">
+                            <!-- Placeholder SVG for package illustration -->
+                            <svg width="144" height="165" viewBox="0 0 144 165" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0.5" y="0.5" width="143" height="164" rx="19.5" fill="white" stroke="#DDDDDD"/><circle cx="72" cy="82" r="40" fill="#F8F8F8"/></svg>
+                        </div>
+                        <h3>Free Plan</h3>
+                        <ul class="plan-features">
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Bandwidth</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Encrypted Connection</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> No Traffic Logs</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Works on All Devices</li>
+                        </ul>
+                        <div class="plan-price">
+                            <strong>Free</strong>
+                        </div>
+                        <a href="#" class="btn-outline btn-plan">Select</a>
+                    </div>
+
+                    <!-- Standard Plan -->
+                    <div class="card pricing-card">
+                        <div class="card-image">
+                            <svg width="144" height="165" viewBox="0 0 144 165" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0.5" y="0.5" width="143" height="164" rx="19.5" fill="white" stroke="#DDDDDD"/><circle cx="72" cy="82" r="40" fill="#F8F8F8"/></svg>
+                        </div>
+                        <h3>Standard Plan</h3>
+                        <ul class="plan-features">
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Bandwidth</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Encrypted Connection</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes Traffic Logs</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Works on All Devices</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Connect Anyware</li>
+                        </ul>
+                        <div class="plan-price">
+                            <strong>$9</strong> <span>/ mo</span>
+                        </div>
+                        <a href="#" class="btn-outline btn-plan">Select</a>
+                    </div>
+
+                    <!-- Premium Plan (Highlighted) -->
+                    <div class="card pricing-card active">
+                        <div class="card-image">
+                            <svg width="144" height="165" viewBox="0 0 144 165" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="0.5" y="0.5" width="143" height="164" rx="19.5" fill="white" stroke="#DDDDDD"/><circle cx="72" cy="82" r="40" fill="#F8F8F8"/></svg>
+                        </div>
+                        <h3>Premium Plan</h3>
+                        <ul class="plan-features">
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited Bandwidth</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Encrypted Connection</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes Traffic Logs</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Works on All Devices</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Connect Anyware</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2FAB73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Get New Features</li>
+                        </ul>
+                        <div class="plan-price">
+                            <strong>$12</strong> <span>/ mo</span>
+                        </div>
+                        <a href="#" class="btn-primary shadow-red btn-plan">Select</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Network Section -->
+        <section class="network bg-light" aria-labelledby="network-title">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 id="network-title" class="section-title">Huge Global Network of Fast VPN</h2>
+                    <p class="section-description">
+                        See LaslesVPN everywhere to make it easier for you when you move locations.
+                    </p>
+                </div>
+                
+                <div class="map-container">
+                    <img src="assets/Huge Global.png" alt="Global Network Map showing worldwide server locations" class="world-map" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section class="sponsors bg-light" aria-label="Our Sponsors">
+            <div class="container">
+                <img src="assets/Sponsored.png" alt="Sponsors: Netflix, Reddit, Amazon, Discord, Spotify" class="sponsors-img" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials bg-light" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 id="testimonials-title" class="section-title">Trusted by Thousands of Happy Customer</h2>
+                    <p class="section-description">
+                        These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+                    </p>
+                </div>
+
+                <!-- CSS-only slider using CSS Scroll Snapping feature -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <!-- Review 1 -->
+                        <div class="card review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="details">
+                                        <h4>ibrahem mohammed</h4>
+                                        <span>Warsaw, Poland</span>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    4.5 <svg width="16" height="16" viewBox="0 0 24 24" fill="#FEA250" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+                            </p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="card review-card active">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="avatar">
+                                        <img src="https://i.pravatar.cc/150?img=12" alt="Yessica Christy portrait" loading="lazy" width="50" height="50">
+                                    </div>
+                                    <div class="details">
+                                        <h4>Yessica Christy</h4>
+                                        <span>Shanxi, China</span>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    4.5 <svg width="16" height="16" viewBox="0 0 24 24" fill="#FEA250" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                “I like it because I like to travel far and still can connect with high speed.”
+                            </p>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="card review-card">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="avatar">
+                                        <img src="https://i.pravatar.cc/150?img=33" alt="Kim Young Jou portrait" loading="lazy" width="50" height="50">
+                                    </div>
+                                    <div class="details">
+                                        <h4>Kim Young Jou</h4>
+                                        <span>Seoul, South Korea</span>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    4.5 <svg width="16" height="16" viewBox="0 0 24 24" fill="#FEA250" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                “This is very unusual for my business that currently requires a virtual private network that has high security.”
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- CSS-only slider hint (users can scroll horizontally to see more) -->
+                    <div class="slider-controls">
+                        <div class="dots" aria-hidden="true">
+                            <span class="dot"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="arrows" aria-hidden="true">
+                            <div class="arrow arrow-prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                            </div>
+                            <div class="arrow arrow-next active">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Subscribe Section -->
+        <!-- Placed inside main so it floats over the footer using negative margin in CSS -->
+        <section class="cta-section container" aria-label="Subscribe to newsletter">
+            <div class="cta-card shadow-gray">
+                <div class="cta-content">
+                    <h2>Subscribe Now for<br>Get Special Features!</h2>
+                    <p>Let's subscribe with us and find the fun.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="#" class="btn-primary shadow-red">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-light">
+        <div class="container footer-content">
+            <!-- Brand Information -->
+            <div class="footer-brand">
+                <a href="#" class="logo" aria-label="LaslesVPN Home">
+                    <img src="assets/Logo.svg" alt="LaslesVPN Logo" width="149" height="37" loading="lazy">
+                </a>
+                <p><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high security.</p>
+                
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16.5" cy="16.5" r="16.5" fill="white" class="social-bg"/><path d="M19.1666 10.8333H17.4999C16.8369 10.8333 16.201 11.0967 15.7322 11.5656C15.2633 12.0344 14.9999 12.6703 14.9999 13.3333V15.8333H12.4999V19.1667H14.9999V25.8333H18.3333V19.1667H20.8333L21.6666 15.8333H18.3333V13.3333C18.3333 13.1123 18.4211 12.9004 18.5774 12.7441C18.7336 12.5878 18.9456 12.5 19.1666 12.5H21.6666V10.8333H19.1666Z" fill="#F53838" class="social-icon"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16.5" cy="16.5" r="16.5" fill="white" class="social-bg"/><path d="M25.3334 10.825C24.5828 11.1528 23.7745 11.3752 22.9251 11.475C23.7915 10.9575 24.4578 10.1388 24.7709 9.1583C23.9626 9.6375 23.0673 9.9833 22.1154 10.1708C21.3533 9.35851 20.2644 8.86873 19.0667 8.86873C16.7645 8.86873 14.8986 10.7346 14.8986 13.0368C14.8986 13.3634 14.9354 13.6806 15.0063 13.9852C11.5435 13.8114 8.48316 12.148 6.42533 9.6208C6.06646 10.2373 5.86088 10.9542 5.86088 11.7144C5.86088 13.1601 6.59628 14.4367 7.71261 15.1834C7.02611 15.1616 6.37684 14.9734 5.82346 14.6657V14.7179C5.82346 16.7383 7.25997 18.4239 9.16723 18.8066C8.81745 18.9018 8.44917 18.9525 8.06915 18.9525C7.80053 18.9525 7.53856 18.9264 7.2844 18.8778C7.81523 20.5348 9.35515 21.7417 11.1831 21.7753C9.7562 22.8931 7.95427 23.5601 5.99612 23.5601C5.65997 23.5601 5.32832 23.5404 5.00391 23.5022C6.85301 24.6888 9.04944 25.3813 11.4086 25.3813C19.0945 25.3813 23.2974 19.0141 23.2974 13.4921C23.2974 13.311 23.2934 13.1309 23.2853 12.9522C24.1017 12.3638 24.8143 11.6425 25.3334 10.825Z" fill="#F53838" class="social-icon"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16.5" cy="16.5" r="16.5" fill="white" class="social-bg"/><path d="M16.5 12.5C14.2909 12.5 12.5 14.2909 12.5 16.5C12.5 18.7091 14.2909 20.5 16.5 20.5C18.7091 20.5 20.5 18.7091 20.5 16.5C20.5 14.2909 18.7091 12.5 16.5 12.5ZM16.5 18.9C15.1745 18.9 14.1 17.8255 14.1 16.5C14.1 15.1745 15.1745 14.1 16.5 14.1C17.8255 14.1 18.9 15.1745 18.9 16.5C18.9 17.8255 17.8255 18.9 16.5 18.9ZM21.3664 12.6991C21.3664 13.2882 20.8882 13.7664 20.2991 13.7664C19.71 13.7664 19.2318 13.2882 19.2318 12.6991C19.2318 12.11 19.71 11.6318 20.2991 11.6318C20.8882 11.6318 21.3664 12.11 21.3664 12.6991ZM24.4127 13.6264C24.3645 12.5927 24.1291 11.6664 23.3664 10.9036C22.6036 10.1409 21.6773 9.90545 20.6436 9.85727C19.5782 9.79545 13.4191 9.79545 12.3536 9.85727C11.32 9.90545 10.3936 10.1409 9.63091 10.9036C8.86818 11.6664 8.63273 12.5927 8.58455 13.6264C8.52273 14.6918 8.52273 20.8509 8.58455 21.9164C8.63273 22.95 8.86818 23.8764 9.63091 24.6391C10.3936 25.4018 11.32 25.6373 12.3536 25.6855C13.4191 25.7473 19.5782 25.7473 20.6436 25.6855C21.6773 25.6373 22.6036 25.4018 23.3664 24.6391C24.1291 23.8764 24.3645 22.95 24.4127 21.9164C24.4745 20.8509 24.4745 14.6918 24.4127 13.6264ZM22.4282 22.4173C22.1382 23.1491 21.5791 23.7082 20.8473 23.9982C19.9864 24.3391 17.8482 24.2664 16.5 24.2664C15.1518 24.2664 13.0109 24.3364 12.15 23.9982C11.4182 23.7082 10.8591 23.1491 10.5691 22.4173C10.2282 21.5564 10.3009 19.4182 10.3009 18.07C10.3009 16.7218 10.2309 14.5809 10.5691 13.72C10.8591 12.9882 11.4182 12.4291 12.15 12.1391C13.0109 11.7982 15.1491 11.8709 16.5 11.8709C17.8482 11.8709 19.9891 11.8009 20.85 12.1391C21.5818 12.4291 22.1409 12.9882 22.4309 13.72C22.7718 14.5809 22.6991 16.7191 22.6991 18.07C22.6991 19.4209 22.7718 21.5564 22.4282 22.4173Z" fill="#F53838" class="social-icon"/></svg>
+                    </a>
+                </div>
+                <p class="copyright">©2020 Lasles<strong>VPN</strong></p>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Server</a></li>
+                        <li><a href="#">Countries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Engage</h4>
+                    <ul>
+                        <li><a href="#">LaslesVPN?</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Earn Money</h4>
+                    <ul>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Become Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
